@@ -83,6 +83,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .presentacion_img{
     display: grid;
     width: 100%;
@@ -103,7 +104,8 @@
     grid-area: 
     "prod1_ prod2_ prod3_ prod4_"
     "prod5_ prod6_ prod7_ prod8_";
-}
+    transition: transform .3s;
+    }
 
 .prod1_,
 .prod2_,
@@ -118,6 +120,19 @@
     margin: 10px;
     padding: 20px;
     width: 315px;
+    transition: transform .3s;
+}
+.prod1_:hover,
+.prod2_:hover,
+.prod3_:hover,
+.prod4_:hover,
+.prod5_:hover,
+.prod6_:hover,
+.prod7_:hover,
+.prod8_:hover {
+    transform: scale(1.1) translatez(-40px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 .img_prod1{
     width: 250px;
@@ -349,6 +364,8 @@ button{
     font-size: 30px;
     color: #4d4d4d;
 }
+
+
 .prod11{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -356,6 +373,7 @@ button{
     grid-area: 
     "prod11_ prod12_ prod13_ prod14_"
     "prod15_ prod16_ prod17_ prod18_";
+    transition: transform .3s;
 }
 
 .prod11_,
@@ -371,6 +389,18 @@ button{
     margin: 10px;
     padding: 20px;
     width: 315px;
+}
+.prod11_:hover,
+.prod12_:hover,
+.prod13_:hover,
+.prod14_:hover,
+.prod15_:hover,
+.prod16_:hover,
+.prod17_:hover,
+.prod18_:hover {
+    transform: scale(1.1) translateY(-40px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 .img_prod11{
     width: 250px;
@@ -395,7 +425,13 @@ button{
     border-radius: 10px;
     margin-left: 15px;
 }
-
+/**/
+.wsp{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}
 
 
 
